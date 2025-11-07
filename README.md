@@ -152,7 +152,7 @@ struct Person : Codable {
     // With coding keys
     @Json(name: "user_id")
     let userId: String
-    // Without coding keys
+    // Without specified coding key, means json field name is same as property name
     let email: String?
 }
 ```
